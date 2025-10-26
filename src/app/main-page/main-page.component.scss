@@ -1,12 +1,87 @@
 @use '../../styles.scss' as *;
 
+.main-content {
+    height: 100vh;
+    background-color: #396039;
+    @include dFlex(center, flex-start);
+}
+
 .hero {
     height: 100vh;
     width: 100vw;
+    /* max-height: 1024px; */
+    max-width: 1920px;
+    position: relative;
     background-color: #396039;
 }
 
 .title-image-section {
-    @include dFlex(space-between);
-    gap: 20px;
+    @include dFlex(center, flex-start);
+    flex-direction: column;
+    height: 90%;
+}
+
+.meals-img-container {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 49px;
+
+    >img {
+        height: 100vh;
+        /* width: 480px; */
+        z-index: 1000;
+    }
+}
+
+.container-left {
+    @include dFlex(space-between, flex-start);
+    flex-direction: column;
+    padding-top: 104px;
+    padding-left: 65px;
+    padding-bottom: 126px;
+    height: 100%;
+    flex: 1;
+
+}
+
+.title-button-container {
+    @include dFlex(center, flex-start);
+    flex-direction: column;
+}
+
+.button-container {
+    padding-top: 64px;
+
+    >button {
+        gap: 10px;
+        padding-top: 16px;
+        padding-right: 26px;
+        padding-bottom: 16px;
+        padding-left: 26px;
+        background-color: #FAF0E6;
+        border: unset;
+        color: #008000;
+        font-size: 24px;
+    }
+}
+
+.bottom-container {
+    @include dFlex(center, center);
+    gap: 16px;
+
+    >div {
+        @include dFlex(center, center);
+        gap: 10px;
+    }
+}
+
+span {
+    font-size: 32px;
+    font-family: 'Quicksand-Medium';
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Quicksand-Medium';
 }
