@@ -1,0 +1,12 @@
+@use '../../styles.scss' as *;
+
+.hero {
+    height: 100vh;
+    width: 100vw;
+    background-color: #396039;
+}
+
+.title-image-section {
+    @include dFlex(space-between);
+    gap: 20px;
+}
