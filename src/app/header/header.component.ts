@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, computed, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  @Input() logoColor: 'white' | 'green' = 'white';
 
+  logoSrc = computed(() =>
+    this.logoColor === 'white'
+      ? 'header-logo-white.png'
+      : 'header-logo-green.png'
+  );
 }

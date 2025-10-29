@@ -1,1 +1,34 @@
-<app-header></app-header>
+<app-header logoColor="green"></app-header>
+<div class="hero">
+    <div class="title-container">
+        <h2>Generate recipe</h2>
+    </div>
+    <div>
+        <h3>Got random stuff in your kitchen? Pop it in—we’ve got the perfect recipe waiting.</h3>
+    </div>
+    <div class="ingredient-container">
+        <div class="input-ingredient">
+            <div>
+                <span>Ingredient</span>
+                <span>Serving size</span>
+            </div>
+            <div>
+                <div>
+                    <input type="text">
+                </div>
+                <div>
+                    <input type="text">
+                    <mat-form-field class="no-check">
+                        <mat-select [(value)]="selected">
+                            <mat-option value="option1">gram</mat-option>
+                            <mat-option value="option2">piece</mat-option>
+                            <mat-option value="option3">ml</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-icon>add</mat-icon>
+                </div>
+            </div>
+        </div>
+        <div class="ingredients-list"></div>
+    </div>
+</div>

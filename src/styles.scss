@@ -10,6 +10,15 @@
     align-items: $ai;
 }
 
+//Color variables
+$dark-green: #1E5515;
+$bg-green: #396039;
+$bg-white-cream: #FAF0E6;
+$bg-white: #FFFFFF;
+
+//Header height
+$header-height: 92px;
+
 @font-face {
     font-family: 'Quicksand-Regular';
     src: url('../public/fonts/Quicksand-Regular.ttf');
@@ -51,10 +60,9 @@ h3,
 h4,
 h5,
 h6,
-p,
-span {
+p {
     margin: 0;
-    color: #FAF0E6;
+    color: $bg-white-cream;
 }
 
 button {
@@ -70,4 +78,9 @@ h1 {
 h2 {
     font-size: 48px;
     font-family: 'Quicksand-SemiBold';
+}
+
+h3 {
+    font-size: 24px;
+    font-family: 'Quicksand-Medium';
 }

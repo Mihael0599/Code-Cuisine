@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
+import { HeaderComponent } from '../header/header.component';
 
 @Component({
   selector: 'app-cookbook',
-  imports: [],
+  imports: [
+    HeaderComponent
+  ],
   templateUrl: './cookbook.component.html',
   styleUrl: './cookbook.component.scss'
 })

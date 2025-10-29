@@ -2,7 +2,7 @@
 
 .main-content {
     height: 100vh;
-    background-color: #396039;
+    background-color: $bg-green;
     @include dFlex(center, flex-start);
 }
 
@@ -12,7 +12,7 @@
     /* max-height: 1024px; */
     max-width: 1920px;
     position: relative;
-    background-color: #396039;
+    background-color: $bg-green;
 }
 
 .title-image-section {
@@ -59,7 +59,7 @@
         padding-right: 26px;
         padding-bottom: 16px;
         padding-left: 26px;
-        background-color: #FAF0E6;
+        background-color: $bg-white-cream;
         border: unset;
         color: #008000;
         font-size: 24px;
@@ -73,7 +73,8 @@
     >div {
         @include dFlex(center, center);
         gap: 10px;
-        >p{
+
+        >p {
             cursor: pointer;
         }
     }
@@ -82,6 +83,7 @@
 span {
     font-size: 32px;
     font-family: 'Quicksand-Medium';
+    color: $bg-white-cream;
 }
 
 p {

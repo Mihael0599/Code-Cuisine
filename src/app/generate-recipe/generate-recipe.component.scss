@@ -1,0 +1,84 @@
+@use '../../styles.scss' as *;
+
+
+.hero {
+    @include dFlex(flex-start, center);
+    flex-direction: column;
+    height: calc(100vh - $header-height);
+    width: 100vw;
+    max-width: 1920px;
+    position: relative;
+    background-color: $bg-white;
+    padding-top: 64px;
+}
+
+h2 {
+    color: $dark-green;
+    font-size: 54px;
+}
+
+h3 {
+    color: $dark-green;
+    font-size: 24px
+}
+
+.title-container {
+    @include dFlex(center, flex-start);
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 24px;
+}
+
+.ingredient-container {
+    @include dFlex(center, flex-start);
+    gap: 32px;
+    padding-top: 64px;
+
+    >div {
+        background-color: #3960394D;
+        border-radius: 20px;
+    }
+}
+
+.input-ingredient {
+    height: 176px;
+    width: 577px;
+}
+
+.ingredients-list {
+    height: 209px;
+    width: 478px;
+}
+
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: #FAF0E6 !important;
+}
+
+::ng-deep .mat-mdc-text-field-wrapper {
+    @include dFlex(center, center);
+    width: 72px !important;
+    height: 36px !important;
+    border-radius: 48px !important;
+}
+
+::ng-deep .mat-mdc-select-panel {
+    background-color: transparent !important;
+
+}
+
+mat-option {
+    >span {
+        color: $dark-green !important;
+    }
+
+    color: $dark-green !important;
+    font-size: 16px !important;
+}
+
+:host ::ng-deep .mdc-line-ripple {
+    display: none !important;
+}
+
+:host ::ng-deep .no-check .mat-pseudo-checkbox {
+    display: none !important;
+}
