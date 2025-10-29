@@ -73,6 +73,9 @@
     >div {
         @include dFlex(center, center);
         gap: 10px;
+        >p{
+            cursor: pointer;
+        }
     }
 }
 
