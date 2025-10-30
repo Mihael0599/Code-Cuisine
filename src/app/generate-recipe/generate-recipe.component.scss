@@ -22,6 +22,12 @@ h3 {
     font-size: 24px
 }
 
+span{
+    color: $dark-green;
+    font-family: 'Quicksand-Medium';
+    font-size: 20px
+}
+
 .title-container {
     @include dFlex(center, flex-start);
     flex-direction: column;
@@ -43,6 +49,9 @@ h3 {
 .input-ingredient {
     height: 176px;
     width: 577px;
+    @include dFlex(flex-start, center);
+    flex-direction: column;
+    padding: 25px 32px;
 }
 
 .ingredients-list {
@@ -81,4 +90,41 @@ mat-option {
 
 :host ::ng-deep .no-check .mat-pseudo-checkbox {
     display: none !important;
+}
+
+.input-container {
+    @include dFlex(center, center);
+    gap: 16px;
+}
+
+.amount-input {
+    width: 61px;
+    height: 36px;
+    border: 1px $bg-white-cream solid;
+    border-radius: 48px;
+    background-color: $bg-white-cream;
+    padding-left: 10px;
+
+    &:focus {
+        outline-width: 0;
+    }
+}
+
+.add-ingredient{
+    width: 300px;
+    height: 36px;
+    border-radius: 48px;
+    background-color: $bg-white-cream;
+    border: 1px $bg-white-cream solid;
+    padding-left: 10px;
+
+    &:focus {
+        outline-width: 0;
+    }
+}
+
+.about-input{
+    @include dFlex(space-between, center);
+    width: 100%;
+    padding-bottom: 8px;
 }
